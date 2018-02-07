@@ -1,4 +1,5 @@
 import com.epam.jl.demo.ioc.Person;
+import lab.model.UsualPerson;
 import lombok.val;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,8 +11,7 @@ public class Test1 {
     @DisplayName("Name method works correctly")
     void Name() {
         val context = new ClassPathXmlApplicationContext("application-context.xml");
-        Person person = context.getBean("person", Person.class);
-
+        val person = context.getBean("person", UsualPerson.class);
         System.out.println(person);
     }
 }
