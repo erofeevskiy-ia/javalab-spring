@@ -1,6 +1,7 @@
 package lab.model;
 
 import lombok.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -13,5 +14,6 @@ public class UsualPerson implements Person {
     private int age;
     private int height;
     private boolean isProgrammer;
-    private List<Contact> contacts;
+    @Autowired
+    private List contacts;
 }
