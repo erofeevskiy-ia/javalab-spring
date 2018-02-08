@@ -4,7 +4,10 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="person" class="lab.model.UsualPerson"
           c:id="1"
@@ -12,6 +15,8 @@
           c:lastName="Smith"
           c:country-ref="country"
           c:age="35"
+          c:height="180"
+          c:isProgrammer="true"
           c:contacts-ref="contacts"/>
 
     <bean id="country" class="lab.model.SimpleCountry"

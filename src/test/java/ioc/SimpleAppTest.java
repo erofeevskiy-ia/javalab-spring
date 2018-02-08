@@ -13,12 +13,11 @@ class SimpleAppTest {
 	private BeanFactory context = new ClassPathXmlApplicationContext(
             APPLICATION_CONTEXT_XML_FILE_NAME);
 
-    @Test
-    void testInitPerson() {
+	@Test
+	void testInitPerson() {
 		assertEquals(getExpectedPerson(),
 				// FYI: Another way to achieve the bean
 				// context.getBean(UsualPerson.class)
-				context.getBean("person")
-		);
+				context.getBean("person"));
 	}
 }
