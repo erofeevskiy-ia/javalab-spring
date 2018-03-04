@@ -18,6 +18,7 @@
     <bean id="age" class="java.lang.Integer" c:value="35"/>
     <bean id="height" class="java.lang.Float" c:value="1.78f"/>
     <bean id="isProgrammer" class="java.lang.Boolean" c:value="true"/>
+    <bean id="isBroke" class="java.lang.Boolean" c:value="false"/>
 
     <bean id="country" class="lab.model.SimpleCountry"
           c:id="1"
